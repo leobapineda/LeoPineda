@@ -2,6 +2,7 @@
   --color-navy: #0a192f;
   --color-green: #64ffda;
   --color-white: #e6f1ff;
+  --navbar-height: 60px;
 }
 
 body {
@@ -39,6 +40,7 @@ header {
 }
 
 .header__nav {
+  height: var(--navbar-height);
   display: flex;
   padding: 0 3rem;
   justify-content: space-between;
@@ -54,7 +56,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
 }
 
 .ul__header {
@@ -70,8 +71,22 @@ header {
 }
 
 .header__hero {
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    background-color: rgba(255, 0, 0, 0.3);
-    align-items: center;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  background-color: rgba(255, 0, 0, 0.3);
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 5%;
+  height: calc(100vh - var(--navbar-height));
+}
+
+.header__hero svg {
+  /* background-color: yellow; */
+  transform: rotate(-10deg);
+  max-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
 }
