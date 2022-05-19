@@ -31,23 +31,21 @@ a {
 
 .header__nav {
   display: flex;
-  background-color: red;
-  padding: 0 1rem;
+  padding: 0 3rem;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 1px 6px 0px #000000;
 }
 
-
 .header__logo-square {
-    
-    background-color: black;
+  background-color: black;
 }
 
 .header__buttons {
   display: flex;
-  background-color: rgba(255, 255, 0, 0.347);
   align-items: center;
   justify-content: space-between;
+  height: 60px;
 }
 
 .ul__header {
@@ -57,3 +55,7 @@ a {
 .ul__header li {
   padding: 0 1rem;
 }
+
+.header__buttons .btn {
+    margin-left: 1.5em;
+  }
