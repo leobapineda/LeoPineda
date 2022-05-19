@@ -70,4 +70,8 @@ header {
 }
 
 .header__hero {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    background-color: rgba(255, 0, 0, 0.3);
+    align-items: center;
 }
