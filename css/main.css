@@ -29,6 +29,7 @@ a {
   color: var(--color-green);
   padding: 0.5em 1em;
   cursor: pointer;
+  border-radius: 0.3em;
 }
 
 header {
@@ -37,7 +38,7 @@ header {
 }
 
 .section {
-  padding: 0 3rem;
+  padding: 0 7%;
 }
 
 .header__nav {
@@ -104,4 +105,17 @@ header {
   margin: 0 auto;
   position: relative;
   top: -10px;
+}
+
+.btn.hero__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0.5em 0.5em;
+}
+
+.btn.hero__button img{
+    width: 20px;
+    fill: var(--color-green);
 }
