@@ -10,6 +10,7 @@ body {
   margin: 0;
   height: 200vh;
   color: var(--color-white);
+  font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -80,6 +81,20 @@ header {
   justify-items: center;
   gap: 5%;
   height: calc(100vh - var(--navbar-height));
+}
+
+.hero__greeting {
+    font-size: 1rem;
+}
+
+.hero__name {
+    margin: 0;
+    font-size: 5rem;
+}
+
+.hero__paragraph {
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 .header__hero svg {
