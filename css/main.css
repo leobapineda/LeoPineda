@@ -3,6 +3,8 @@
   --color-green: #64ffda;
   --color-white: #e6f1ff;
   --navbar-height: 60px;
+  --colof-lightest-navy: #233554;
+  --colof-light-navy: #112240;
 }
 
 body {
@@ -120,31 +122,13 @@ header {
   fill: var(--color-green);
 }
 
-.main-btn__container {
-  border: 2px solid #64ffda;
-  display: inline-block;
-  border-radius: 0.5em;
+main {
+  padding: 1rem;
 }
 
-.main-btn {
-  position: relative;
-  left: 4px;
-  top: 4px;
-  transition: all 0.3s ease;
-}
-
-.main-btn:hover {
-  position: relative;
-  left: 0px;
-  top: 0px;
-}
-
-@keyframes custom {
-  from {
-    transform: translate(0%);
-  }
-
-  to {
-    transform: translate(100%);
-  }
+.project__section {
+  background-color: var(--colof-light-navy);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
