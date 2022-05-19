@@ -129,6 +129,16 @@ main {
 .project__section {
   background-color: var(--colof-light-navy);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(500px, 1fr));
   gap: 10px;
+  justify-items: center;
+  background-color: rgba(255, 0, 0, 0.409);
+
+}
+
+iframe {
+  min-width: 300px;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 100%;
 }
