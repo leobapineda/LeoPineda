@@ -127,7 +127,8 @@ main {
   padding: 1rem;
 }
 
-.project__intro, .project__tittle {
+.project__intro,
+.project__tittle {
   margin: 0;
 }
 
@@ -165,7 +166,12 @@ main {
   font-size: 0.8rem;
 }
 
-
+.project__text .btn {
+  border-radius: 0.1em;
+  min-width: 120px;
+  margin-right: 0.5em;
+  margin-top: 2em;
+}
 
 .project__video-container {
   height: 0;
