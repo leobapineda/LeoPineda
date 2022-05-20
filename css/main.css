@@ -245,6 +245,7 @@ main {
 .about-me__skills .skill-name {
   font-size: 0.7rem;
   text-align: center;
+  color: var(--color-white);
 }
 
 .skills__tittle {
@@ -258,15 +259,28 @@ main {
   justify-items: center;
 }
 
+/* .section.contact{
+  height: 100vh;
+}
 
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 
+.contact__coffe-mug-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-
-
-
-
+.contact__content .contact__coffe-mug {
+  background-color: red;
+  width: 50%;
+} */
 
 @media (max-width: 600px) {
   .project__section {
