@@ -202,7 +202,7 @@ main {
 }
 
 .about-me__arrow {
-  /* align-self: flex-start; */
+  align-self: flex-start;
 }
 
 .about-me__arrow svg {
@@ -213,7 +213,7 @@ main {
 
 .about-me__profile {
   color: var(--color-green);
-  margin-top: 2.5em;
+  margin-top: 2em;
 }
 
 .about-me__description {
@@ -230,16 +230,33 @@ main {
   fill: #64ffda50;
 }
 
+.about-me__skills {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  margin: 3rem auto;
+  /* border: 5px solid pink; */
+}
+
+.about-me__skills svg {
+  /* background-color: blue; */
+}
 
 
+.about-me__skills .skill-name {
+  font-size: 0.7rem;
+  text-align: center;
+}
 
+.skills__tittle {
+  /* background-color: #ffa60074; */
+}
 
-
-
-
-
-
-
+.skills__container {
+  /* background-color: #ffff0065; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  justify-items: center;
+}
 
 
 
