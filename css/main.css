@@ -47,8 +47,8 @@ header {
 }
 
 .section {
-  padding: 7%;
-  border: 5px solid pink;
+  padding: 5%;
+  /* border: 5px solid pink; */
 }
 
 .header__nav {
@@ -63,7 +63,6 @@ header {
 .header__logo-square {
   background-color: rgb(255, 0, 0);
 } */
-
 
 .ul__header {
   display: flex;
@@ -154,7 +153,8 @@ main {
 }
 
 .section__intro {
-  margin: 3rem 0 0 0;
+  /* margin: 3rem 0 0 0; */
+  margin: 0;
 }
 .section__tittle {
   margin-bottom: 0.5em;
@@ -182,15 +182,15 @@ main {
   background-color: #64ffda50;
   color: var(--color-white);
   padding: 0.3em;
-  margin-right: 0.5em;
+  margin: 0.2em 0.3em;
   text-align: center;
-  min-width: 70px;
-  font-size: 0.8rem;
+  min-width: 5.5em;
+  font-size: 0.75rem;
 }
 
 .project__text .btn {
   border-radius: 0.1em;
-  min-width: 120px;
+  min-width: 7em;
   margin-right: 0.5em;
   margin-top: 2em;
 }
@@ -223,7 +223,7 @@ main {
 
 #dog {
   display: inline;
- 
+
   fill: red;
 }
 
@@ -235,7 +235,6 @@ main {
   width: 100%;
   height: 60%;
 }
-
 
 .about-me__profile {
   color: var(--color-green);
@@ -250,7 +249,7 @@ main {
   width: 30px;
 }
 
-.about-me__skills svg{
+.about-me__skills svg {
   width: 50px;
   height: 50px;
   fill: #64ffda50;
@@ -275,7 +274,7 @@ main {
   justify-items: center;
 }
 
-.section.contact{
+.section.contact {
   /* height: 90vh; */
 }
 
@@ -319,8 +318,6 @@ main {
   width: 30px;
   margin: 0 0.5rem;
 }
-
-
 
 @media (max-width: 600px) {
   .project__section {
