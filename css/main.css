@@ -186,7 +186,7 @@ main {
 }
 
 .section.about-me {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .about-me__content {
@@ -237,30 +237,20 @@ main {
   /* border: 5px solid pink; */
 }
 
-.about-me__skills svg {
-  /* background-color: blue; */
-}
-
-
 .about-me__skills .skill-name {
   font-size: 0.7rem;
   text-align: center;
   color: var(--color-white);
 }
 
-.skills__tittle {
-  /* background-color: #ffa60074; */
-}
-
 .skills__container {
-  /* background-color: #ffff0065; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   justify-items: center;
 }
 
-/* .section.contact{
-  height: 100vh;
+.section.contact{
+  /* height: 90vh; */
 }
 
 .contact__content {
@@ -268,7 +258,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+}
+
+.contact__text {
+  margin: 3rem;
+  text-align: center;
 }
 
 .contact__coffe-mug-container {
@@ -277,10 +271,30 @@ main {
   align-items: center;
 }
 
-.contact__content .contact__coffe-mug {
-  background-color: red;
+.contact__coffe-mug {
   width: 50%;
-} */
+}
+
+.footer {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__text {
+  font-size: 0.7rem;
+  color: var(--color-white);
+  line-height: 1.5;
+}
+
+.footer__contact img {
+  width: 30px;
+  margin: 0 0.5rem;
+}
+
+
 
 @media (max-width: 600px) {
   .project__section {
