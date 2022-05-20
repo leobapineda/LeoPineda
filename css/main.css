@@ -7,8 +7,9 @@
   --color-green: #64ffda;
   --color-white: #e6f1ff;
   --navbar-height: 60px;
-  --colof-lightest-navy: #233554;
-  --colof-light-navy: #112240;
+  --color-lightest-navy: #233554;
+  --color-light-navy: #112240;
+  --color-red: #fd2155;
 }
 
 body {
@@ -163,7 +164,7 @@ main {
 .project__section {
   margin: 0 auto;
   width: 80%;
-  background-color: var(--colof-light-navy);
+  background-color: var(--color-light-navy);
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   gap: 2rem;
@@ -221,20 +222,14 @@ main {
   gap: 1rem;
 }
 
-#dog {
-  display: inline;
-
-  fill: red;
-}
-
 .about-me__arrow {
   align-self: flex-start;
 }
 
-.about-me__arrow svg {
+/* .about-me__arrow svg {
   width: 100%;
   height: 60%;
-}
+} */
 
 .about-me__profile {
   color: var(--color-green);
@@ -258,8 +253,7 @@ main {
 .about-me__skills {
   display: grid;
   grid-template-columns: 30% 1fr;
-  margin: 3rem auto;
-  /* border: 5px solid pink; */
+  margin-top: 4rem;
 }
 
 .about-me__skills .skill-name {
@@ -275,7 +269,7 @@ main {
 }
 
 .section.contact {
-  /* height: 90vh; */
+  height: 100vh;
 }
 
 .contact__content {
@@ -301,7 +295,7 @@ main {
 }
 
 .footer {
-  margin: 1rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -314,6 +308,10 @@ main {
   line-height: 1.5;
 }
 
+.footer__text a {
+  color: var(--color-green);
+}
+
 .footer__contact img {
   width: 30px;
   margin: 0 0.5rem;
@@ -321,7 +319,7 @@ main {
 
 @media (max-width: 600px) {
   .project__section {
-    background-color: var(--colof-light-navy);
+    background-color: var(--color-light-navy);
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
