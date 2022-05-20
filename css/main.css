@@ -185,6 +185,55 @@ main {
   height: 100%;
 }
 
+.section.about-me {
+  height: 100vh;
+}
+
+.about-me__content {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 1rem;
+}
+
+.about-me__arrow img {
+  
+}
+
+.about-me__profile {
+  color: var(--color-green);
+}
+
+.about-me__description {
+  line-height: 2;
+}
+
+.about-me__skills svg{
+  width: 50px;
+  height: 50px;
+  fill: #64ffda50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
   .project__section {
     background-color: var(--colof-light-navy);
