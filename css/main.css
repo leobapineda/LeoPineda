@@ -219,6 +219,13 @@ main {
   width: 50px;
   height: 50px;
   fill: #64ffda50;
+  transition: all 0.5s;
+}
+
+
+.about-me__skills svg:hover {
+  fill: #64ffda;
+
 }
 
 .about-me__skills {
