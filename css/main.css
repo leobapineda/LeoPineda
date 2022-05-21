@@ -204,8 +204,10 @@ main {
   line-height: 2;
 }
 
-.about-me__description .about-me__dog {
-  width: 30px;
+.about-me__description img {
+  width: 35px;
+  position: relative;
+  bottom: -3px;
 }
 
 .btn.resumen {
