@@ -182,16 +182,12 @@ a {
 
 .about-me__content {
   display: grid;
-  grid-template-columns: 30% 1fr;
-  gap: 1rem;
-}
-
-.about-me__arrow {
-  align-self: flex-start;
+  grid-template-columns: 20% 1fr;
+  gap: 3%;
 }
 
 .about-me__arrow img {
-    width: 100%;
+  width: 100%;
 }
 
 .about-me__profile {
@@ -200,11 +196,11 @@ a {
 }
 
 .about-me__description {
-  line-height: 2;
+  line-height: 1.8;
 }
 
 .about-me__description img {
-  width: 35px;
+  width: 30px;
   position: relative;
   bottom: -3px;
 }
@@ -214,22 +210,9 @@ a {
   color: #fd2155;
 }
 
-.about-me__skills svg {
-  width: 50px;
-  height: 50px;
-  fill: #64ffda50;
-  transition: all 0.5s;
-}
-
-
-.about-me__skills svg:hover {
-  fill: #64ffda;
-
-}
-
 .about-me__skills {
   display: grid;
-  grid-template-columns: 30% 1fr;
+  grid-template-columns: 22% 1fr;
   margin-top: 4rem;
 }
 
@@ -242,7 +225,18 @@ a {
 .skills__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  justify-items: center;
+  justify-items: start;
+}
+
+.about-me__skills svg {
+  width: 45px;
+  height: 45px;
+  fill: #64ffda50;
+  transition: all 0.5s;
+}
+
+.about-me__skills svg:hover {
+  fill: #64ffda;
 }
 
 .section.contact {
