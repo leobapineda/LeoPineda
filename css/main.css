@@ -262,15 +262,15 @@ a {
 }
 
 .contact__coffe-mug {
-  width: 50%;
+  width: 45%;
 }
 
 .footer {
   padding: 1rem;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 100%; */
 }
 
 .footer__text {
@@ -284,8 +284,9 @@ a {
 }
 
 .footer__contact img {
-  width: 30px;
-  margin: 0 0.5rem;
+  width: 27px;
+  margin-left: 0.8rem;
+  
 }
 
 @media (max-width: 600px) {
