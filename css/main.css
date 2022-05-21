@@ -187,8 +187,12 @@ main {
   gap: 1rem;
 }
 
-.about-me__arrow{
+.about-me__arrow {
   align-self: flex-start;
+}
+
+.about-me__arrow img {
+    width: 100%;
 }
 
 .about-me__profile {
