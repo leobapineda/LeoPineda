@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-    <!-- google font -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -19,21 +17,11 @@
 </head>
 
 <body>
-    <header id="home__section" class="header">
+    <header id="home" class="header">
         <nav class="header__nav">
             <div class="header__logo">
                 <a href="index.html">
-                    <svg width="42" height="52" viewBox="0 0 423 523" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.625438" y="89.6031" width="150.03" height="150.03" rx="19.5"
-                            transform="rotate(-17.1904 0.625438 89.6031)" fill="#64FFDA" stroke="black" />
-                        <rect x="45.2621" y="233.886" width="150.03" height="150.03" rx="75.015"
-                            transform="rotate(-17.1904 45.2621 233.886)" fill="#FD2155" stroke="black" />
-                        <rect x="89.8987" y="378.169" width="150.03" height="150.03" rx="19.5"
-                            transform="rotate(-17.1904 89.8987 378.169)" fill="#64FFDA" stroke="black" />
-                        <path
-                            d="M256.352 405.197C244.108 365.618 266.267 323.607 305.846 311.362C345.425 299.118 387.436 321.277 399.68 360.856C411.925 400.435 389.766 442.446 350.187 454.69C310.608 466.935 268.597 444.776 256.352 405.197Z"
-                            fill="#64FFDA" stroke="black" />
-                    </svg>
+                    <img src="./images/icons/icons-other/small-logo.svg" alt="">
                 </a>
             </div>
             <section class="header__buttons">
@@ -45,18 +33,20 @@
                 </ul>
             </section>
         </nav>
-        <div class="section header__hero">
+        <div class="header__hero section">
             <div class="hero__message">
                 <div class="hero__greeting">Hi, I am</div>
                 <h1 class="hero__name">Leobardo</h1>
                 <h1 class="hero__name">Pineda</h1>
-                <p class="hero__paragraph">I love exploring and creating things for the web.
+                <p class="hero__paragraph">I love exploring and creating things for the web while listening Chill Lofi Beats.
                     I'm a self-motivated learner with a strong love for organization, and good coffe.
                     <img class="coffee-pot" src="./images/icons/icons-other/coffee-pot.svg" alt="coffee pot">
                 </p>
-                <button class="btn hero__button"><a href="mailto:leobardopinedasalgado@gmail.com
-                    ">Get in touch! <img src='./images/icons/icons-contact/mail-empty.svg'
-                    alt="email icon"></a>
+                <button class="btn hero__button">
+                    <a href="mailto:leobardopinedasalgado@gmail.com">
+                        Get in touch!
+                        <img src='./images/icons/icons-contact/mail-empty.svg' alt="email icon">
+                    </a>
                 </button>
             </div>
             <div class="header__big-logo-container">
@@ -81,15 +71,15 @@
             <div class="project__text">
                 <h1 class="individual-project__tittle">PokemoNFT</h1>
                 <p class="project__paragraph">An online store to get the rarest and most demanded
-                    first edition pokemon cards,
-                    but cooler! in NFTs.</p>
+                    first edition NFTs pokemon cards,
+                    but cooler!</p>
                 <div class="project__stack">
                     <span>React</span>
                     <span>Javascript</span>
                     <span>CSS</span>
                 </div>
-                <button class="btn"><a href="">GitHub</a></button>
-                <button class="btn"><a href="">Live Demo</a></button>
+                <button class="btn"><a href="#">GitHub</a></button>
+                <button class="btn"><a href="#">Live Demo</a></button>
             </div>
             <div class="project__video-container">
                 <iframe class="project__video" src="https://www.youtube.com/embed/gnwIiw3Rz3I"
@@ -104,6 +94,7 @@
         <h1 class=" section__tittle  about-me__tittle"> <span class="section__tittle-number">II. </span> About me</h1>
         <div class="about-me__content">
             <div class="about-me__arrow">
+                <!-- <img src="./images/icons/icons-other/arrow.svg" alt=""> -->
                 <svg viewBox="0 0 291 225" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Arrow" filter="url(#filter0_d_29_11)">
                         <path
@@ -149,7 +140,8 @@
                             fill="#383F4D" />
                     </svg>
                 </p>
-                <button class="btn resumen"><a target="_blank" href="https://drive.google.com/file/d/1I78RigvhaTP6yn4bCLXhGLiHQJUF02ik/view?usp=sharing">Resume</a></button>
+                <button class="btn resumen"><a target="_blank"
+                        href="https://drive.google.com/file/d/1I78RigvhaTP6yn4bCLXhGLiHQJUF02ik/view?usp=sharing">Resume</a></button>
             </div>
         </div>
         <div class="about-me__skills">
@@ -231,9 +223,12 @@
             <div class="footer__text">Built by Leo Pineda.</div>
         </div>
         <div class="footer__contact">
-            <a  target="_blank"href="mailto:leobardopinedasalgado@gmail.com"><img src="./images/icons/icons-contact/mail.svg" alt=""></a>
-            <a target="_blank" href="https://www.linkedin.com/in/leobaps"><img src="./images/icons/icons-contact/linkedin.svg" alt=""></a>
-            <a target="_blank" href="https://github.com/leobapineda"><img src="./images/icons/icons-contact/github.svg" alt=""></a>
+            <a target="_blank" href="mailto:leobardopinedasalgado@gmail.com"><img
+                    src="./images/icons/icons-contact/mail.svg" alt=""></a>
+            <a target="_blank" href="https://www.linkedin.com/in/leobaps"><img
+                    src="./images/icons/icons-contact/linkedin.svg" alt=""></a>
+            <a target="_blank" href="https://github.com/leobapineda"><img src="./images/icons/icons-contact/github.svg"
+                    alt=""></a>
         </div>
     </footer>
 </body>

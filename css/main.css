@@ -15,7 +15,6 @@
 body {
   background-color: var(--color-navy);
   margin: 0;
-  height: 200vh;
   color: var(--color-white);
   font-family: "Roboto", sans-serif;
 }
@@ -43,12 +42,9 @@ a {
   border-radius: 0.3em;
 }
 
-header {
-  height: 100vh;
-}
-
 .section {
   padding: 5%;
+  /* height: 100vh; */
 }
 
 .header__nav {
@@ -80,7 +76,6 @@ header {
 }
 
 .hero__name {
-  margin: 0;
   font-size: 4rem;
 }
 
@@ -192,7 +187,7 @@ main {
   gap: 1rem;
 }
 
-.about-me__arrow {
+.about-me__arrow{
   align-self: flex-start;
 }
 
