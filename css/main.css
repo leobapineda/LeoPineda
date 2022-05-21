@@ -44,13 +44,26 @@ a {
 
 .section {
   padding: 5%;
-  /* height: 100vh; */
+}
+
+.section__intro {
+  margin: 0;
+  color: #fd215580;
+}
+
+.section__tittle-number {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.section__tittle {
+  margin-bottom: 0.5em;
 }
 
 .header__nav {
   height: var(--navbar-height);
   display: flex;
-  padding: 0 3rem;
+  padding: 0 3%;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 1px 10px 0px #071120;
@@ -61,12 +74,18 @@ a {
 }
 
 .ul__header li {
-  padding: 0 1rem;
+  padding-left: 1.5rem;
+  transition: color 0.3s;
+}
+
+.ul__header li:hover {
+  padding-left: 1.5rem;
+  color: #fd215590;
 }
 
 .header__hero {
   display: grid;
-  grid-template-columns: minmax(300px, 40%) minmax(300px, 1fr);
+  grid-template-columns: minmax(300px, 40%) minmax(200px, 1fr);
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -85,7 +104,9 @@ a {
 }
 
 .hero__paragraph .coffee-pot {
-  width: 25px;
+  width: 23px;
+  position: relative;
+  bottom: -1px;
 }
 
 .header__big-logo-container {
@@ -96,38 +117,15 @@ a {
   height: 100%;
 }
 
-.header__big-logo-container svg {
-  max-height: 100%;
-}
-
 .btn.hero__button {
+  padding: 0.3em;
+}
+
+.btn.hero__button a {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   gap: 0.2em;
-  padding: 0.5em 0.5em;
-}
-
-.btn.hero__button img {
-  width: 20px;
-  fill: var(--color-green);
-}
-
-main {
-  padding: 1rem;
-}
-
-.section__intro {
-  margin: 0;
-  color: #fd215580;
-}
-.section__tittle {
-  margin-bottom: 0.5em;
-}
-
-.section__tittle-number {
-  font-size: 1.3rem;
-  font-weight: 500;
 }
 
 .project__section {
