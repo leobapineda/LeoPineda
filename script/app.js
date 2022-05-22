@@ -7,11 +7,14 @@ const navLinks = document.querySelectorAll(".nav-link");
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY && window.scrollY >= 50) {
     nav.classList.add("hidden");
+    hamburger.classList.remove("active");
+    ulHeader.classList.remove("active");
   } else {
     nav.classList.remove("hidden");
+    
   }
-
   lastScrollY = window.scrollY;
+  
 });
 
 hamburger.addEventListener("click", () => {

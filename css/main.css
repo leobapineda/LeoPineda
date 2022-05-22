@@ -113,17 +113,11 @@ a {
 }
 
 @media (max-width: 600px) {
-
-  /* .ul__header {
-    display: none;
-  } */
-
   .hamburguer-menu {
     display: block;
     cursor: pointer;
     z-index: 9;
   }
-
 
   .hamburguer-menu .bar {
     background-color: var(--color-green);
@@ -132,8 +126,6 @@ a {
   .hamburguer-menu .bar:nth-child(3) {
     background-color: var(--color-red);
   }
-
-
 
   .hamburguer-menu.active .bar:nth-child(2) {
     opacity: 0;
@@ -152,11 +144,14 @@ a {
     position: fixed;
     right: -100%;
     top: 0;
-    gap: 10px;
+    gap: 12%;
     flex-direction:  column;
+    justify-content: center;
     width: 100%;
     text-align: center;
     transition: 0.2s;
+    background-color:  #112240;
+    height: 95%;
   }
 
   .ul__header.active {
