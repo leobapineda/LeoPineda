@@ -109,7 +109,7 @@ a {
   height: 3px;
   margin: 5px auto;
   background-color: rgb(255, 255, 255);
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 600px) {
@@ -121,9 +121,18 @@ a {
   .hamburguer-menu {
     display: block;
     cursor: pointer;
-    background-color: red;
     z-index: 9;
   }
+
+
+  .hamburguer-menu .bar {
+    background-color: var(--color-green);
+  }
+
+  .hamburguer-menu .bar:nth-child(3) {
+    background-color: var(--color-red);
+  }
+
 
 
   .hamburguer-menu.active .bar:nth-child(2) {
@@ -147,8 +156,7 @@ a {
     flex-direction:  column;
     width: 100%;
     text-align: center;
-    transition: 0.3s;
-    background-color: blue;
+    transition: 0.2s;
   }
 
   .ul__header.active {
