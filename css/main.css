@@ -61,6 +61,10 @@ a {
   margin-bottom: 0.5em;
 }
 
+header {
+  height: 100vh;
+}
+
 .header__nav {
   height: var(--navbar-height);
   display: flex;
@@ -300,7 +304,16 @@ a {
 .btn.resumen {
   border: 1px solid #fd2155;
   color: #fd2155;
+  padding: 0.5em 0.7em;
 }
+  
+.btn.resumen a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4em;
+}
+
 
 .about-me__skills {
   display: grid;
@@ -332,7 +345,8 @@ a {
 }
 
 .section.contact {
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 15vh 0;
 }
 
 .contact__content {
@@ -343,7 +357,7 @@ a {
 }
 
 .contact__text {
-  margin: 3rem;
+  margin: 10vh;
   text-align: center;
 }
 
@@ -354,11 +368,12 @@ a {
 }
 
 .contact__coffe-mug {
-  width: 45%;
+  width: 60%;
 }
 
 .footer {
-  padding: 1rem;
+  height: 10%;
+  padding: 0 3%;
   padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -472,6 +487,139 @@ grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
     padding: 0.5rem;
     width: 90%;
   }
+
+
+
+
+
+
+
+  .header__hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 5%;
+    height: calc(100vh - var(--navbar-height));
+  }
+  
+  .hero__name {
+    font-size: 4rem;
+  }
+  
+  .hero__paragraph {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .hero__paragraph .coffee-pot {
+    width: 23px;
+    position: relative;
+    bottom: -1px;
+  }
+  
+  .header__big-logo-container {
+    display: none;
+  }
+  
+  .header__big-logo-container svg {
+    display: none;
+  }
+  
+  
+  
+  .btn.hero__button {
+    font-size: 1.5rem;
+    padding: 0.3em;
+  }
+  
+  .btn.hero__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+  }
+  
+
+
+/* about me */
+
+  .about-me__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+  
+  .about-me__arrow img {
+    display: none;
+
+  }
+  
+  .about-me__profile {
+    color: var(--color-green);
+    margin-top: 2em;
+  }
+  
+  .about-me__description {
+    line-height: 1.8;
+  }
+  
+  .about-me__description img {
+    width: 30px;
+    position: relative;
+    bottom: -3px;
+  }
+  
+  .btn.resumen {
+    font-size: 1.3rem;
+    border: 1px solid #fd2155;
+    color: #fd2155;
+    padding: 0.5em 0.7em;
+  }
+    
+  .btn.resumen a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4em;
+  }
+
+
+
+  .about-me__skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+  
+  .about-me__skills .skill-name {
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--color-white);
+  }
+  
+  .skills__container {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    justify-items: start;
+  }
+  
+  .about-me__skills svg {
+    width: 45px;
+    height: 45px;
+    fill: #64ffda50;
+    transition: all 0.5s;
+  }
+  
+  .about-me__skills svg:hover {
+    fill: #64ffda;
+  }
+  
+
+
 
 
 
