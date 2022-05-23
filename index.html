@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="./script/app.js"></script>
     <title>Leo Pineda</title>
 </head>
 
 <body>
     <header id="home" class="header">
+
+      
+
         <nav class="header__nav">
             <div class="header__logo">
                 <a href="index.html">
@@ -42,6 +44,7 @@
 
         </nav>
         <div class="header__hero section">
+            <!-- <div class="test" > lololo </div> -->
             <div class="hero__message">
                 <div class="hero__greeting">Hi, I am</div>
                 <h1 class="hero__name">Leobardo</h1>
@@ -51,13 +54,18 @@
                     I'm a self-motivated learner with a strong love for organization, and good coffe.
                     <img class="coffee-pot" src="./images/icons/icons-other/coffee-pot.svg" alt="coffee pot">
                 </p>
-                <button class="btn hero__button">
-                    <a href="mailto:leobardopinedasalgado@gmail.com">
-                        Get in touch!
-                        <img src='./images/icons/icons-contact/mail-empty.svg' alt="email icon">
-                    </a>
-                </button>
+                <div class="hero__button-external-container" >
+                    <div class="hero__button-container" >
+                        <button class="btn hero__button">
+                            <a href="">
+                                <!-- <span class=" hero__button-text" >Get in touch!</span> -->
+                                <img src='./images/icons/icons-contact/mail-empty.svg' alt="email icon">
+                            </a>
+                        </button>
+                    </div>
+                </div>
             </div>
+            
             <div class="header__big-logo-container">
                 <svg width="420" height="475" viewBox="0 0 420 475" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="logo-big" stroke-width="10">
@@ -217,5 +225,8 @@
                     alt=""></a>
         </div>
     </footer>
+
+    <script src="./script/app.js"></script>
+
 </body>
 </html>
