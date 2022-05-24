@@ -355,24 +355,19 @@ a.btn.resumen {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5vh 0;
 }
 
 .contact__text {
-  margin: 10vh;
+  margin: 7vh;
   text-align: center;
 }
 
-.contact__btn-container {
-  /* background-color: red; */
+.contact__coffe-mug-container {
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-}
-
-.contact__coffe-mug-container {
-  width: fit-content;
-  background-color: yellow;
 }
 
 .contact__coffe-mug {
@@ -382,14 +377,12 @@ a.btn.resumen {
 .footer {
   width: 50%;
   height: 10%;
-  /* padding: 0 3%; */
   padding-bottom: 0.5rem;
   padding-top: 0;
+  padding-right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* display: none; */
-  /* background-color: red; */
 }
 
 .footer__text {
