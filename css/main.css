@@ -14,7 +14,6 @@
   --hover-red-btn: #fd215525;
 }
 
-
 body {
   padding-top: calc(var(--navbar-height) / 2);
   background-color: var(--color-navy);
@@ -177,8 +176,8 @@ header {
   height: 100vh;
 }
 
-.btn.hero__button::before{
-  content: 'Send a';
+.btn.hero__button::before {
+  content: "Send a";
 }
 
 .btn.hero__button {
@@ -199,13 +198,13 @@ header {
   width: 1.2em;
 }
 
-.btn.hero__button.button_down::before{
+.btn.hero__button.button_down::before {
   display: none;
 }
 
 .btn.hero__button.button_down {
   background-color: var(--color-red);
-  border: 1px solid var(--color-red) ;
+  border: 1px solid var(--color-red);
   position: fixed;
   left: calc(100% - 3em);
   top: 90%;
@@ -253,7 +252,6 @@ header {
   margin-right: 0.5em;
   cursor: pointer;
   margin-top: 3%;
-
 }
 
 .project__video-container {
@@ -302,19 +300,18 @@ header {
   border: 1px solid #fd2155;
   color: #fd2155;
 }
-  
+
 .btn.resumen:hover {
   background-color: var(--hover-red-btn);
 }
 
 a.btn.resumen {
-  gap: 0.4em; 
+  gap: 0.4em;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 6em;
 }
-
 
 .about-me__skills {
   display: grid;
@@ -423,85 +420,7 @@ a.btn.resumen {
   }
 }
 
-
-
 @media (max-width: 650px) {
-  .header__hero {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    gap: 5%;
-    height: calc(100vh - var(--navbar-height));
-  }
-  
-  .hero__name {
-    font-size: 3.5rem;
-    display: inline;
-  }
-  
-  .hero__name.name {
-    color: var(--color-green);
-  }
-
-  .hero__paragraph {
-    font-size: 1.1rem;
-    line-height: 1.5;
-  }
-  
-  .header__big-logo-container {
-    display: none;
-  }
-  
-  .btn.hero__button {
-    font-size: 1.3rem;
-    padding: 0.3em;
-  }
-
-  .about-me__content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3%;
-  }
-  
-  .about-me__arrow img {
-    display: none;
-
-  }
-  
-  .about-me__description {
-    line-height: 1.8;
-  }
- 
-  .btn.resumen {
-    font-size: 1.3rem;
-  }
-
-  .about-me__skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 4rem;
-  }
-} 
-
-@media (max-width:576px) {
-
-  .project__section {
-    background-color: var(--color-light-navy);
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    justify-content: center;
-    padding: 0.5rem;
-    width: 100%;
-  }
-}
-
-
-
-@media (max-width: 600px) {
   .hamburguer-menu {
     display: block;
     cursor: pointer;
@@ -521,25 +440,24 @@ a.btn.resumen {
   }
 
   .hamburguer-menu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg) ;
-  }
- 
-  .hamburguer-menu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg) ;
+    transform: translateY(8px) rotate(45deg);
   }
 
+  .hamburguer-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
   .ul__header {
     position: fixed;
     right: -100%;
     top: 0;
     gap: 12%;
-    flex-direction:  column;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     text-align: center;
     transition: 0.2s;
-    background-color:  #112240;
+    background-color: #112240;
     height: 95%;
     font-size: 1.5rem;
     font-weight: bold;
@@ -549,4 +467,67 @@ a.btn.resumen {
     right: 0;
   }
 
+  .header__hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 5%;
+    height: calc(100vh - var(--navbar-height));
+  }
+
+  .hero__name {
+    font-size: 3.5rem;
+    display: inline;
+  }
+
+  .hero__name.name {
+    color: var(--color-green);
+  }
+
+  .hero__paragraph {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .header__big-logo-container {
+    display: none;
+  }
+
+  .btn.hero__button {
+    font-size: 1.3rem;
+    padding: 0.3em;
+  }
+
+  .about-me__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+  }
+
+  .about-me__arrow img {
+    display: none;
+  }
+
+  .about-me__description {
+    line-height: 1.8;
+  }
+
+  .btn.resumen {
+    font-size: 1.3rem;
+  }
+
+  .about-me__skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .project__section {
+    width: 100%;
+  }
 }
