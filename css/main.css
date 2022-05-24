@@ -10,6 +10,8 @@
   --color-lightest-navy: #233554;
   --color-light-navy: #112240;
   --color-red: #fd2155;
+  --hover-green-btn: #63ffda25;
+  --hover-red-btn: #fd215525;
 }
 
 
@@ -46,7 +48,7 @@ a {
 }
 
 .btn:hover {
-  background-color: #64ffda25;
+  background-color: var(--hover-green-btn);
 }
 
 .section {
@@ -105,8 +107,6 @@ header {
   transform: translateY(calc(-1 * var(--navbar-height)));
   box-shadow: none;
 }
-
-
 
 .hamburguer-menu .bar {
   display: block;
@@ -256,10 +256,6 @@ header {
 
 }
 
-.project__text .btn:hover {
-  background-color: #64ffda30;
-}
-
 .project__video-container {
   height: 0;
   padding-bottom: 56.25%;
@@ -278,7 +274,7 @@ header {
 
 .about-me__content {
   display: grid;
-  grid-template-columns: 20% 1fr;
+  grid-template-columns: 18% 1fr;
   gap: 3%;
 }
 
@@ -289,6 +285,7 @@ header {
 .about-me__profile {
   color: var(--color-green);
   margin-top: 2em;
+  font-size: 1.1rem;
 }
 
 .about-me__description {
@@ -304,16 +301,18 @@ header {
 .btn.resumen {
   border: 1px solid #fd2155;
   color: #fd2155;
-  padding: 0.5em 0.7em;
 }
   
+.btn.resumen:hover {
+  background-color: var(--hover-red-btn);
+}
+
 a.btn.resumen {
   gap: 0.4em; 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 6em;
-  padding: 0.4em 0.5em;
 }
 
 
@@ -336,8 +335,8 @@ a.btn.resumen {
 }
 
 .about-me__skills svg {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   fill: #64ffda50;
   transition: all 0.5s;
 }
@@ -347,8 +346,7 @@ a.btn.resumen {
 }
 
 .section.contact {
-  /* height: 100vh; */
-  padding-top: 15vh;
+  padding-top: 10vh;
   padding-bottom: 15vh;
 }
 
