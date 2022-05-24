@@ -234,7 +234,6 @@ header {
 
 .project__stack {
   margin-top: -0.5em;
-  margin-bottom: 1em;
 }
 
 .project__stack span {
@@ -250,11 +249,11 @@ header {
 
 .project__text .btn {
   font-size: 0.9rem;
-  border-radius: 0.1em;
   min-width: 7em;
   margin-right: 0.5em;
-  margin-top: 5%;
   cursor: pointer;
+  margin-top: 3%;
+
 }
 
 .project__text .btn:hover {
