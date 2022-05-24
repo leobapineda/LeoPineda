@@ -15,8 +15,6 @@ document.documentElement.style.setProperty(
 window.addEventListener("scroll", () => {
   let heroBtnInternalContainerTop = heroBtnInternalContainer.getBoundingClientRect().top;
   let spaceToExecute = heroBtnInternalContainerTop - 50;
-  console.log(heroBtnInternalContainerTop);
-  console.log(spaceToExecute);
 
   if (lastScrollY < window.scrollY && window.scrollY >= 50) {
     nav.classList.add("hidden");
