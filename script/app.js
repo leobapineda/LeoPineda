@@ -1,10 +1,10 @@
-const nav = document.querySelector(".header__nav");
 let lastScrollY = window.scrollY;
+let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+const nav = document.querySelector(".header__nav");
 const hamburgerMenu = document.querySelector(".hamburguer-menu");
 const ulHeader = document.querySelector(".ul__header");
 const navLinks = document.querySelectorAll(".nav-link");
 const heroBtnInternalContainer = document.querySelector(".hero__button-container");
-let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
 const heroButton = document.querySelector(".hero__button");
 
 document.documentElement.style.setProperty(
