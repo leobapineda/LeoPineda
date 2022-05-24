@@ -412,47 +412,8 @@ a.btn.resumen {
   }
 }
 
-
-@media (max-width: 900px) {
-
-  body {
-    /* background-color: blue; */
-  }
-
-    .project__section {
-      margin: 0 auto;
-      width: 100%;
-      background-color: var(--color-light-navy);
-      display: grid;
-      grid-template-columns: 250px 1fr;
-      gap: 2%;
-      justify-content: center;
-      padding: 1rem;
-      box-shadow: 0px 6px 6px 0px #071120;
-    }
-}
-
-
-/* grid-template-columns: 20% 1fr;
-grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
-
-
 @media (max-width: 768px) {
-  body {
-    /* background-color: red; */
-  }
-
-  .project__text .btn {
-    font-size: 0.9rem;
-    border-radius: 0.1em;
-    min-width: 7em;
-    margin-right: 0.5em;
-    margin-top: 1%;
-  }
-  
-
   .project__section {
-    background-color: var(--color-light-navy);
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -460,66 +421,11 @@ grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
     padding: 0.5rem;
     width: 80%;
   }
-
-  .project__video-container {
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    width: 100%;
-    align-self: center;
-    margin: 0 auto;
-  }
-  
-  .project__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 
 
 @media (max-width: 650px) {
-
-  body {
-    /* background-color: rgba(255, 235, 205, 0.092); */
-  }
-
-  .project__section {
-    background-color: var(--color-light-navy);
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    justify-content: center;
-    padding: 0.5rem;
-    width: 90%;
-  }
-
-  .contact__btn-container {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .contact__coffe-mug-container {
-    width: fit-content;
-    background-color: yellow;
-  }
-  
-  .contact__coffe-mug {
-    width: 60%;
-  }
-  
-
-
-
-
-
   .header__hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -532,45 +438,27 @@ grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
   }
   
   .hero__name {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    display: inline;
   }
   
+  .hero__name.name {
+    color: var(--color-green);
+  }
+
   .hero__paragraph {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
-  }
-  
-  .hero__paragraph .coffee-pot {
-    width: 23px;
-    position: relative;
-    bottom: -1px;
   }
   
   .header__big-logo-container {
     display: none;
   }
   
-  .header__big-logo-container svg {
-    display: none;
-  }
-  
-  
-  
   .btn.hero__button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.3em;
   }
-  
-  .btn.hero__button a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.2em;
-  }
-  
-
-
-/* about me */
 
   .about-me__content {
     display: grid;
@@ -583,76 +471,21 @@ grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
 
   }
   
-  .about-me__profile {
-    color: var(--color-green);
-    margin-top: 2em;
-  }
-  
   .about-me__description {
     line-height: 1.8;
   }
-  
-  .about-me__description img {
-    width: 30px;
-    position: relative;
-    bottom: -3px;
-  }
-  
+ 
   .btn.resumen {
     font-size: 1.3rem;
-    border: 1px solid #fd2155;
-    color: #fd2155;
-    padding: 0.5em 0.7em;
   }
-    
-  .btn.resumen a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.4em;
-  }
-
-
 
   .about-me__skills {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 4rem;
   }
-  
-  .about-me__skills .skill-name {
-    font-size: 0.7rem;
-    text-align: center;
-    color: var(--color-white);
-  }
-  
-  .skills__container {
-    padding-top: 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    justify-items: start;
-  }
-  
-  .about-me__skills svg {
-    width: 45px;
-    height: 45px;
-    fill: #64ffda50;
-    transition: all 0.5s;
-  }
-  
-  .about-me__skills svg:hover {
-    fill: #64ffda;
-  }
-  
-
-
-  .footer {
-    width: 80%;
-  }
-  
-
-
 } 
+
 @media (max-width:576px) {
 
   .project__section {
