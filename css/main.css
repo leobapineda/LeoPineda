@@ -144,6 +144,10 @@ header {
   line-height: 1.5;
 }
 
+.hero__paragraph .guitar-icon {
+  width: 25px;
+}
+
 .hero__paragraph .coffee-pot {
   width: 23px;
   position: relative;
@@ -197,8 +201,8 @@ header {
   position: absolute;
   left: 5vw;
   top: 0;
-  transition-property: position, top, left;
-  transition-duration: 0.4s;
+  transition-property: all;
+  transition-duration: 0.5s;
   transition-timing-function: ease-out;
 }
 
@@ -318,11 +322,13 @@ header {
   padding: 0.5em 0.7em;
 }
   
-.btn.resumen a {
+a.btn.resumen {
+  gap: 0.4em; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.4em;
+  width: 6em;
+  padding: 0.4em 0.5em;
 }
 
 
@@ -357,7 +363,8 @@ header {
 
 .section.contact {
   /* height: 100vh; */
-  padding: 15vh 0;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 
 .contact__content {
@@ -389,7 +396,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 
 .footer__text {
