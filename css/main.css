@@ -530,4 +530,26 @@ a.btn.resumen {
   .project__section {
     width: 100%;
   }
+
+  .footer {
+    flex-direction: column-reverse;
+    padding: 0.5em;
+    align-items: flex-start;
+    width: 80%;
+    gap: 0.5em;
+  }
+
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__text {
+    font-size: 1rem;
+  }
+
+  .footer__contact .footer-icon {
+    margin: 0.5em 0;
+  }
+
 }
