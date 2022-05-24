@@ -21,6 +21,8 @@ window.addEventListener("scroll", () => {
     ulHeader.classList.remove("active");
   } else {
     nav.classList.remove("hidden");
+    hamburgerMenu.classList.remove("active");
+    ulHeader.classList.remove("active");
   }
   lastScrollY = window.scrollY;
 

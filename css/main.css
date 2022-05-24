@@ -41,7 +41,11 @@ a {
   color: var(--color-green);
   padding: 0.5em 1em;
   cursor: pointer;
-  border-radius: 0.3em;
+  border-radius: 0.1em;
+}
+
+.btn:hover {
+  background-color: #64ffda25;
 }
 
 .section {
@@ -79,7 +83,7 @@ header {
   width: 100%;
   background-color: var(--color-navy);
   transition: all 0.2s;
-  z-index: 999;
+  z-index: 10;
 }
 
 .ul__header {
@@ -93,7 +97,7 @@ header {
 
 .ul__header li:hover {
   padding-left: 1.5rem;
-  color: #fd215590;
+  color: #fd2155;
 }
 
 .header__nav.hidden {
@@ -114,15 +118,6 @@ header {
   background-color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
-
-
-
-
-
-
-
-
-
 
 .header__hero {
   display: grid;
@@ -145,11 +140,11 @@ header {
 }
 
 .hero__paragraph .guitar-icon {
-  width: 25px;
+  width: 1.1em;
 }
 
 .hero__paragraph .coffee-pot {
-  width: 23px;
+  width: 1em;
   position: relative;
   bottom: -1px;
 }
@@ -165,10 +160,6 @@ header {
 .header__big-logo-container svg {
   width: 80%;
 }
-
-
-/* ANIMATED BUTTON */
-
 
 .hero__button-external-container {
   position: relative;
@@ -191,7 +182,7 @@ header {
 
 .btn.hero__button {
   box-sizing: border-box;
-  z-index: 99;
+  z-index: 9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,6 +198,7 @@ header {
 }
 
 .btn.hero__button img {
+  width: 1.2em;
   margin-left: 0.4em;
 }
 
@@ -228,27 +220,15 @@ header {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.btn.hero__button.button_down img {
-  
-}
-
-
-/* ANIMATED BUTTON */
-
-.btn.hero__button a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2em;
+.main.section {
+  position: relative;
+  z-index: 2;
 }
 
 .project__section {
+  position: relative;
   margin: 0 auto;
   width: 80%;
   background-color: var(--color-light-navy);
@@ -282,6 +262,11 @@ header {
   min-width: 7em;
   margin-right: 0.5em;
   margin-top: 5%;
+  cursor: pointer;
+}
+
+.project__text .btn:hover {
+  background-color: #64ffda30;
 }
 
 .project__video-container {
@@ -406,13 +391,16 @@ a.btn.resumen {
 }
 
 .footer {
+  width: 50%;
   height: 10%;
-  padding: 0 3%;
+  /* padding: 0 3%; */
   padding-bottom: 0.5rem;
+  padding-top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* display: none; */
+  /* background-color: red; */
 }
 
 .footer__text {
@@ -672,7 +660,10 @@ grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
   
 
 
-
+  .footer {
+    width: 80%;
+  }
+  
 
 
 } 
