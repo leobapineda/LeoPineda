@@ -387,20 +387,24 @@ a.btn.resumen {
 
 .footer__text {
   font-size: 0.7rem;
-  color: var(--color-white);
   line-height: 1.5;
+  color: var(--color-white);
 }
 
 .footer__text .footer__name {
   color: var(--color-green);
 }
 
-.footer__contact img {
+.footer__contact a svg {
   width: 27px;
   margin-left: 0.8rem;
+  fill: #64ffda80;
+  transition: all 0.2s;
 }
 
-
+.footer__contact a svg:hover {
+  fill: var(--color-green);
+}
 
 @media (max-width: 992px) {
   .project__section {
