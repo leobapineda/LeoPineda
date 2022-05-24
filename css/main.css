@@ -42,6 +42,7 @@ a {
   padding: 0.5em 1em;
   cursor: pointer;
   border-radius: 0.1em;
+  transition: all 0.2s linear;
 }
 
 .btn:hover {
@@ -92,7 +93,7 @@ header {
 
 .ul__header li {
   padding-left: 1.5rem;
-  transition: color 0.2s;
+  transition: color 0.2s linear;
 }
 
 .ul__header li:hover {
@@ -105,18 +106,19 @@ header {
   box-shadow: none;
 }
 
-.hamburguer-menu {
-  display: none;
-  cursor: pointer;
-}
+
 
 .hamburguer-menu .bar {
   display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: rgb(255, 255, 255);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
+}
+
+.hamburguer-menu {
+  display: none;
+  cursor: pointer;
 }
 
 .header__hero {
@@ -167,7 +169,6 @@ header {
 }
 
 .hero__button-container {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   margin-left: -5vw;
@@ -181,14 +182,11 @@ header {
 }
 
 .btn.hero__button {
-  box-sizing: border-box;
   z-index: 9;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.2em;
-  width: 6.5em;
-  padding: 0.6em ;
+  gap: 0.4em;
   position: absolute;
   left: 5vw;
   top: 0;
@@ -199,17 +197,11 @@ header {
 
 .btn.hero__button img {
   width: 1.2em;
-  margin-left: 0.4em;
 }
 
 .btn.hero__button.button_down::before{
   display: none;
 }
-
-.btn.hero__button.button_down img{
-  margin-left: 0;
-}
-
 
 .btn.hero__button.button_down {
   background-color: var(--color-red);
@@ -237,7 +229,7 @@ header {
   gap: 2%;
   justify-content: center;
   padding: 1rem;
-  box-shadow: 0px 6px 6px 0px #071120;
+  box-shadow: 0px 6px 6px 0px #040e1c;
 }
 
 .project__stack {
