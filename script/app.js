@@ -4,14 +4,12 @@ const nav = document.querySelector(".header__nav");
 const hamburgerMenu = document.querySelector(".hamburguer-menu");
 const ulHeader = document.querySelector(".ul__header");
 const navLinks = document.querySelectorAll(".nav-link");
-const heroBtnInternalContainer = document.querySelector(".hero__button-container");
+const heroBtnInternalContainer = document.querySelector(
+  ".hero__button-container"
+);
 const heroButton = document.querySelector(".hero__button");
 
-document.documentElement.style.setProperty(
-  "--scrollbar-width",
-  scrollBarWidth + "px"
-);
-
+document.documentElement.style.setProperty("--scrollbar-width", scrollBarWidth + "px");
 window.addEventListener("scroll", () => {
   let heroBtnInternalContainerTop = heroBtnInternalContainer.getBoundingClientRect().top;
 
@@ -24,13 +22,13 @@ window.addEventListener("scroll", () => {
     hamburgerMenu.classList.remove("active");
     ulHeader.classList.remove("active");
   }
-  lastScrollY = window.scrollY;
-
+  
   if (heroBtnInternalContainerTop <= 0) {
     heroButton.classList.add("button_down");
   } else if (heroBtnInternalContainerTop > 0) {
     heroButton.classList.remove("button_down");
   }
+  lastScrollY = window.scrollY;
 });
 
 hamburgerMenu.addEventListener("click", () => {
