@@ -48,3 +48,7 @@ navLinks.forEach((link) =>
 AOS.init({
   once: true
 });
+
+window.onbeforeunload = () => {  
+  window.scrollTo(0, 0);  
+};
