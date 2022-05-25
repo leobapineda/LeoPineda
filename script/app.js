@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  once: true
+});
 
 let lastScrollY = window.scrollY;
 let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
