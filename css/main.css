@@ -408,7 +408,7 @@ a.btn.resumen {
 }
 
 
-@media only screen and (min-width: 650px) {
+@media (min-width: 650px) {
   .btn.hero__button.button_down::before {
     display: none;
   }
@@ -424,10 +424,6 @@ a.btn.resumen {
     height: 2.5rem;
 }
 }
-
-
-
-
 
 @media (max-width: 992px) {
   .project__section {
