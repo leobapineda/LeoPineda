@@ -270,6 +270,10 @@ header {
   height: 100%;
 }
 
+.section.about-me {
+  margin-top: 8vh;
+}
+
 .about-me__content {
   display: grid;
   grid-template-columns: 18% 1fr;
@@ -506,6 +510,10 @@ a.btn.resumen {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3%;
+  }
+
+  .about-me__profile.developer {
+    margin-top: 0;
   }
 
   .about-me__arrow img {
