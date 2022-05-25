@@ -1,6 +1,4 @@
-AOS.init({
-  once: true
-});
+
 
 let lastScrollY = window.scrollY;
 let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -46,3 +44,7 @@ navLinks.forEach((link) =>
     ulHeader.classList.remove("active");
   })
 );
+
+AOS.init({
+  once: true
+});
