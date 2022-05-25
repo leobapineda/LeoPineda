@@ -197,7 +197,7 @@ header {
 .btn.hero__button img {
   width: 1.2em;
 }
-
+/*
 .btn.hero__button.button_down::before {
   display: none;
 }
@@ -212,7 +212,7 @@ header {
   width: 2.5rem;
   height: 2.5rem;
 }
-
+*/
 .main.section {
   position: relative;
   z-index: 2;
@@ -406,6 +406,28 @@ a.btn.resumen {
 .footer__contact a svg:hover {
   fill: var(--color-green);
 }
+
+
+@media only screen and (min-width: 650px) {
+  .btn.hero__button.button_down::before {
+    display: none;
+  }
+  
+  .btn.hero__button.button_down {
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    position: fixed;
+    left: calc(100% - 3em);
+    top: 80%;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+}
+
+
+
+
 
 @media (max-width: 992px) {
   .project__section {
