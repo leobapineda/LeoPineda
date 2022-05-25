@@ -1,3 +1,5 @@
+AOS.init();
+
 let lastScrollY = window.scrollY;
 let scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
 const nav = document.querySelector(".header__nav");
