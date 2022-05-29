@@ -22,6 +22,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
 h1 {
   margin: 0;
 }
@@ -133,6 +134,10 @@ header {
 
 .hero__name {
   font-size: 4rem;
+}
+ 
+.hero__name.name {
+  color: var(--color-green);
 }
 
 .hero__paragraph {
@@ -503,10 +508,6 @@ a.btn.resumen {
   .hero__name {
     font-size: 3.5rem;
     display: inline;
-  }
-
-  .hero__name.name {
-    color: var(--color-green);
   }
 
   .hero__paragraph {
